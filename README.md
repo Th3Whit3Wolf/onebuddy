@@ -79,4 +79,4 @@ colorscheme onebuddy
 
 - [ ] Better LSP Highlighting
 - [ ] Better Diagnostic Highlighting
-- [ ] Better Tree Sitter Highlighting
+- [x] Better Tree Sitter Highlighting
