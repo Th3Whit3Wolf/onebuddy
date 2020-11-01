@@ -62,6 +62,7 @@ else
     Color.new('pmenu', "#dfdfdf")
 end
 
+Color.new('pink', "#d291e4")
 -------------------------
 -- Vim Terminal Colors --
 -------------------------
@@ -556,3 +557,57 @@ Group.new('ALEErrorSign',   c.hue_5,   c.none, no)
 
 -- Neovim NERDTree Background fix
 Group.new('NERDTreeFile', c.mono_1, c.none, no)
+
+-----------------------------
+-- TreeSitter Highlighting --
+-----------------------------
+
+Group.new('TSAnnotation',         c.hue_6_2, c.none, no)
+Group.new('TSAttribute',          c.hue_1, c.none, no)
+Group.new('TSBoolean',            c.hue_6, c.none, no)
+Group.new('TSCharacter',          c.hue_4, c.none, no)
+Group.new('TSConditional',        c.pink, c.none, no)
+Group.new('TSConstant',           c.hue_2, c.none, no)
+Group.new('TSConstBuiltin',       c.hue_6, c.none, no)
+Group.new('TSConstMacro',         c.hue_1, c.none, no)
+Group.new('TSConstructor',        c.hue_1, c.none, no)
+Group.new('TSEmphasis',           c.hue_6_2, c.none, no)
+Group.new('TSError',              c.hue_5, c.none, no)
+Group.new('TSException',          c.pink, c.none, no)
+Group.new('TSField',              c.hue_5, c.none, no)
+Group.new('TSFloat',              c.hue_4, c.none, no)
+Group.new('TSFunction',           c.hue_2, c.none, no)
+Group.new('TSFuncBuiltin',        c.hue_2, c.none, no)
+Group.new('TSFuncMacro',          c.hue_6_2, c.none, no)
+Group.new('TSInclude',            c.pink, c.none, no)
+Group.new('TSKeyword',            c.pink, c.none, no)
+Group.new('TSKeywordFunction',    c.pink, c.none, no)
+Group.new('TSKeywordOperator',    c.pink, c.none, no)
+Group.new('TSLabel',              c.hue_2, c.none, no)
+Group.new('TSLiteral',            c.hue_6_2, c.none, no)
+Group.new('TSMethod',             c.hue_2, c.none, no)
+Group.new('TSNamespace',          c.pink, c.none, no)
+Group.new('TSNumber',             c.hue_6, c.none, no)
+Group.new('TSOperator',           c.mono_1, c.none, no)
+Group.new('TSParameter',          c.hue_1, c.none, no)
+Group.new('TSParameterReference', c.hue_1, c.none, no)
+Group.new('TSProperty',           c.hue_6_2, c.none, no)
+Group.new('TSPunctBracket',       c.mono_1, c.none, no)
+Group.new('TSPunctDelimiter',     c.mono_1, c.none, no)
+Group.new('TSPunctSpecial',       c.mono_1, c.none, no)
+Group.new('TSRepeat',             c.pink, c.none, no)
+Group.new('TSString',             c.hue_4, c.none, no)
+Group.new('TSStringEscape',       c.hue_1, c.none, no)
+Group.new('TSStringRegex',        c.hue_4, c.none, no)
+Group.new('TSStrong',             c.hue_6_2, c.none, no)
+Group.new('TSStructure',          c.hue_6_2, c.none, no)
+Group.new('TSTag',                c.hue_5, c.none, no)
+Group.new('TSTagDelimiter',       c.mono_3, c.none, no)
+Group.new('TSText',               c.hue_6_2, c.none, no)
+Group.new('TSTitle',              c.hue_6_2, c.none, no)
+Group.new('TSType',               c.hue_2, c.none, no)
+Group.new('TSTypeBuiltin',        c.hue_2, c.none, no)
+Group.new('TSUnderline',          c.hue_6_2, c.none, no)
+Group.new('TSURI',                c.hue_6_2, c.none, no)
+Group.new('TSVariable',           c.hue_1, c.none, no)
+Group.new('TSVariableBuiltin',    c.hue_6_2, c.none, no)
