@@ -57,8 +57,11 @@ git clone https://github.com/Th3Whit3Wolf/onebuddy
 In your `init.vim` add the following
 
 ```vim
+packadd! colorbuddy
 packadd! onebuddy
 ```
+
+and then
 
 ```vim
 lua require('colorbuddy').colorscheme('onebuddy')
