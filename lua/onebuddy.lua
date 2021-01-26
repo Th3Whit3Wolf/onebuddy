@@ -559,12 +559,33 @@ Group.new('NERDTreeFile', c.mono_1, c.none, no)
 
 -- Coc.nvim Floating Background fix
 Group.new('CocFloating', c.mono_1, c.none, no)
-
 Group.new('NormalFloating', c.mono_1, c.none, no)
+-----------------------------
+--     LSP Highlighting    --
+-----------------------------
+Group.new('LspDiagnosticsDefaultError',           c.hue_5,   c.none,  no)
+Group.new('LspDiagnosticsDefaultWarning',         c.hue_6_2,   c.none,  no)
+Group.new('LspDiagnosticsDefaultInformation',     c.hue_1,   c.none,  no)
+Group.new('LspDiagnosticsDefaultHint',            c.hue_4,   c.none,  no)
+Group.new('LspDiagnosticsVirtualTextError',       c.hue_5,   c.none,  no)
+Group.new('LspDiagnosticsVirtualTextWarning',     c.hue_6_2,   c.none,  no)
+Group.new('LspDiagnosticsVirtualTextInformation', c.hue_1,   c.none,  no)
+Group.new('LspDiagnosticsVirtualTextHint',        c.hue_4,   c.none,  no)
+Group.new('LspDiagnosticsUnderlineError',         c.hue_5,   c.none,  ul)
+Group.new('LspDiagnosticsUnderlineWarning',       c.hue_6_2, c.none,  ul)
+Group.new('LspDiagnosticsUnderlineInformation',   c.hue_1,   c.none,  ul)
+Group.new('LspDiagnosticsUnderlineHint',          c.hue_4,   c.none,  ul)
+Group.new('LspDiagnosticsFloatingError',          c.hue_5,   g.pmenu, ul)
+Group.new('LspDiagnosticsFloatingWarning',        c.hue_6_2, g.pmenu, ul)
+Group.new('LspDiagnosticsFloatingInformation',    c.hue_1,   g.pmenu, ul)
+Group.new('LspDiagnosticsFloatingHint',           c.hue_4,   g.pmenu, ul)
+Group.new('LspDiagnosticsSignError',              c.hue_5,   c.none,  no)
+Group.new('LspDiagnosticsSignWarning',            c.hue_6_2, c.none,  no)
+Group.new('LspDiagnosticsSignInformation',        c.hue_1,   c.none,  no)
+Group.new('LspDiagnosticsSignHint',               c.hue_4,   c.none,  no)
 -----------------------------
 -- TreeSitter Highlighting --
 -----------------------------
-
 Group.new('TSAnnotation',         c.hue_6_2, c.none, no)
 Group.new('TSAttribute',          c.hue_1, c.none, no)
 Group.new('TSBoolean',            c.hue_6, c.none, no)
