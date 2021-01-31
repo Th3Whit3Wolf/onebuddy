@@ -6,6 +6,10 @@ This plugin is also an example of how easy it is to customize and make new color
 
 Check out [`lua/onebuddy.lua`](lua/onebuddy.lua)
 
+## Prequisites
+
+Requires neovim version 0.5 or greater
+
 ## Screenshots
 
 Dark theme
