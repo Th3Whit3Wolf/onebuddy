@@ -61,6 +61,14 @@ else
     Color.new('pmenu', "#dfdfdf")
 end
 
+local italics = (function()
+    if vim.g.onebuddy_disable_italics ~= true then
+        return  i
+    else
+        return  no
+    end
+end)()
+
 -------------------------
 -- Vim Primary Colors --
 -------------------------
@@ -128,7 +136,7 @@ Group.new('IncSearch',    c.syntax_bg,        c.hue_2,      no)
 Group.new('LineNr',       c.mono_4,       c.none,      no)
 Group.new('CursorLineNr', c.mono_1,       c.syntax_cursor,  no)
 Group.new('MatchParen',   c.hue_5,        c.syntax_cursor,  ul + b)
-Group.new('Italic',       c.none,         c.none,      i)
+Group.new('Italic',       c.none,         c.none,      italics)
 Group.new('ModeMsg',      c.mono_1,       c.none,      no)
 Group.new('MoreMsg',      c.mono_1,       c.none,      no)
 Group.new('NonText',      c.mono_3,       c.none,      no)
@@ -167,7 +175,7 @@ Group.new('helpSectionDelim', c.mono_3,   c.none,  no)
 -- Standard Syntax Highlighting --
 ----------------------------------
 
-Group.new('Comment',        c.mono_3,        c.none, i)
+Group.new('Comment',        c.mono_3,        c.none, italics)
 Group.new('Constant',       c.hue_4,         c.none, no)
 Group.new('String',         c.hue_4,         c.none, no)
 Group.new('Character',      c.hue_4,         c.none, no)
@@ -466,7 +474,7 @@ Group.new('phpSuperGlobals', c.hue_5,   c.none, no)
 -- Pug (Formerly Jade)
 Group.new('pugAttributesDelimiter', c.hue_6,   c.none, no)
 Group.new('pugClass',               c.hue_6,  c.none,  no)
-Group.new('pugDocType',             c.mono_3, c.none,  i)
+Group.new('pugDocType',             c.mono_3, c.none,  italics)
 Group.new('pugTag',                 c.hue_5,  c.none,  no)
 
 -- PureScript
@@ -484,7 +492,7 @@ Group.new('pythonBuiltin',         c.hue_1,  c.none, no)
 Group.new('pythonStatement',       c.hue_3,  c.none, no)
 Group.new('pythonParam',           c.hue_6,  c.none, no)
 Group.new('pythonEscape',          c.hue_5,  c.none, no)
-Group.new('pythonSelf',            c.mono_2, c.none, i)
+Group.new('pythonSelf',            c.mono_2, c.none, italics)
 Group.new('pythonClass',           c.hue_2,  c.none, no)
 Group.new('pythonOperator',        c.hue_3,  c.none, no)
 Group.new('pythonEscape',          c.hue_5,  c.none, no)
@@ -531,7 +539,7 @@ Group.new('vimCommentTitle', c.mono_3, c.none, b)
 Group.new('vimFunction',     c.hue_1,  c.none, no)
 Group.new('vimFuncName',     c.hue_3,  c.none, no)
 Group.new('vimHighlight',    c.hue_2,  c.none, no)
-Group.new('vimLineComment',  c.mono_3, c.none, i)
+Group.new('vimLineComment',  c.mono_3, c.none, italics)
 Group.new('vimParenSep',     c.mono_2, c.none, no)
 Group.new('vimSep',          c.mono_2, c.none, no)
 Group.new('vimUserFunc',     c.hue_1,  c.none, no)
