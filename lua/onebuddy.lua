@@ -591,7 +591,7 @@ Group.new('NERDTreeFile', c.mono_1, c.none, no)
 
 -- Coc.nvim Floating Background fix
 Group.new('CocFloating', c.mono_1, c.none, no)
-Group.new('NormalFloat', c.mono_1, c.none, no)
+Group.new('NormalFloat', c.mono_1, c.pmenu, no)
 -----------------------------
 --     LSP Highlighting    --
 -----------------------------
